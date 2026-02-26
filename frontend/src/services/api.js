@@ -1,8 +1,14 @@
 import axios from "axios";
 import toast from "react-hot-toast";
 
-const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000/api";
-
+// Build a safe base URL that always includes `/api`
+let apiUrl = process.env.REACT_APP_API_URL || "http://localhost:5000/api";
+// If the URL does not already end with `/api`, append it
+if (!/\/api\/?$/i.test(apiUrl)) {
+  apiUrl = apiUrl.replace(/\/+$/, "") + "/api";
+}
+const API_URL = apiUrl;
+console.log(`${API_URL} from api.js`);
 const api = axios.create({
   baseURL: API_URL,
   headers: { "Content-Type": "application/json" },

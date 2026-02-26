@@ -17,7 +17,14 @@
 .all-slots__search::placeholder { color: var(--text-muted); }
 .all-slots__count { font-size: 13px; color: var(--text-muted); margin-bottom: 16px; }
 .all-slots__grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
-.all-slots__empty { text-align: center; padding: 80px 40px; color: var(--text-muted); }
+.all-slots__empty {
+  text-align: center;
+  padding: 64px 40px;
+  color: var(--text-muted);
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  border: 1px dashed rgba(148,163,184,0.6);
+}
 .all-slots__empty-icon { font-size: 48px; margin-bottom: 16px; }
 .all-slots__empty h3 { font-size: 18px; color: var(--text); margin-bottom: 8px; }
 .all-slots__empty p { font-size: 14px; }

@@ -93,7 +93,7 @@
 
 /* Section */
 .dashboard__section-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
-.dashboard__section-title { font-size: 18px; font-weight: 700; }
+.dashboard__section-title { font-size: 20px; font-weight: 700; }
 .dashboard__see-all { font-size: 14px; color: var(--accent); font-weight: 500; transition: opacity 0.2s; }
 .dashboard__see-all:hover { opacity: 0.7; }
 .dashboard__slots-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
