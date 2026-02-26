@@ -1,0 +1,22 @@
+.slot-filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.slot-filters__btn {
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-muted);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.slot-filters__btn:hover { border-color: rgba(56,189,248,0.3); color: var(--text); }
+.slot-filters__btn--active {
+  background: rgba(56,189,248,0.12);
+  color: var(--accent);
+  border-color: rgba(56,189,248,0.3);
+}
